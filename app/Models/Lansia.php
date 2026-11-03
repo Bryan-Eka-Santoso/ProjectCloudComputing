@@ -43,6 +43,27 @@ class Lansia extends Authenticatable
         return $this->pin_hash;
     }
 
+    /*
+     * Tabel "lansia" sengaja tidak punya kolom remember_token (login lansia
+     * selalu lewat PIN ulang, tidak perlu "remember me"). Override method-
+     * method ini jadi no-op supaya Authenticatable tidak coba baca/tulis
+     * kolom yang tidak ada.
+     */
+    public function getRememberToken(): ?string
+    {
+        return null;
+    }
+
+    public function setRememberToken($value): void
+    {
+        //
+    }
+
+    public function getRememberTokenName(): ?string
+    {
+        return null;
+    }
+
     public function dibuatOleh(): BelongsTo
     {
         return $this->belongsTo(User::class, 'created_by');

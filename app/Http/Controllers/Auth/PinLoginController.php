@@ -32,7 +32,7 @@ class PinLoginController extends Controller
                 ->onlyInput('lansia_id');
         }
 
-        Auth::guard('lansia')->login($lansia, remember: true);
+        Auth::guard('lansia')->login($lansia);
         $request->session()->regenerate();
 
         return redirect()->route('lansia.dashboard');
