@@ -24,26 +24,41 @@
     </script>
     <style>
         body { font-family: 'Nunito', sans-serif; }
-        .tap-target { min-height: 64px; }
+        .tap-target { min-height: 60px; }
     </style>
 </head>
-<body class="bg-white text-slate-800 text-lg">
-    <div class="max-w-md mx-auto min-h-screen flex flex-col">
+<body class="bg-abu-50 text-slate-800 text-lg">
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-white border-b border-abu-300 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+            <a href="{{ route('lansia.dashboard') }}" class="flex items-center gap-2 font-extrabold text-biru text-xl">
+                🧠 Ceria Otak
+            </a>
+
+            <nav class="flex items-center gap-3 text-base">
+                @auth('lansia')
+                    <span class="text-abu-400 hidden sm:inline">Halo, {{ auth('lansia')->user()->nama }}</span>
+                    <form method="POST" action="{{ route('pin-login.destroy') }}">
+                        @csrf
+                        <button type="submit" class="rounded-xl bg-abu-100 font-semibold px-4 py-2 hover:bg-abu-200">
+                            🔄 Ganti Pengguna
+                        </button>
+                    </form>
+                @endauth
+                <a href="{{ route('login') }}" class="rounded-xl bg-biru/10 text-biru font-semibold px-4 py-2 hover:bg-biru/20">
+                    Masuk sebagai Keluarga
+                </a>
+            </nav>
+        </header>
+
         @if (session('info'))
             <div class="bg-biru/10 text-biru font-semibold text-center py-3 px-4">
                 {{ session('info') }}
             </div>
         @endif
 
-        <main class="flex-1 px-5 pb-28 pt-4">
+        <main class="flex-1 px-6 py-8 max-w-4xl w-full mx-auto">
             @yield('content')
         </main>
-
-        @hasSection('bottom-nav')
-            <nav class="fixed bottom-0 inset-x-0 max-w-md mx-auto bg-abu-100 border-t border-abu-300 flex justify-around py-3">
-                @yield('bottom-nav')
-            </nav>
-        @endif
     </div>
 </body>
 </html>

@@ -1,12 +1,14 @@
 @extends('layouts.lansia')
 
 @section('content')
-    <div class="flex flex-col items-center pt-10">
-        <div class="w-24 h-24 rounded-full bg-biru/10 flex items-center justify-center mb-4">
-            <span class="text-4xl">🧠</span>
+    <div class="max-w-md mx-auto bg-white rounded-2xl border border-abu-300 shadow-sm p-10 mt-6">
+        <div class="flex flex-col items-center">
+            <div class="w-24 h-24 rounded-full bg-biru/10 flex items-center justify-center mb-4">
+                <span class="text-4xl">🧠</span>
+            </div>
+            <h1 class="text-2xl font-extrabold text-biru mb-1">Ceria Otak</h1>
+            <p class="text-abu-400 mb-8 text-center">Pilih nama, lalu masukkan PIN untuk mulai bermain</p>
         </div>
-        <h1 class="text-2xl font-extrabold text-biru mb-1">Ceria Otak</h1>
-        <p class="text-abu-400 mb-8 text-center">Pilih nama, lalu masukkan PIN untuk mulai bermain</p>
 
         <form method="POST" action="{{ route('pin-login.store') }}" class="w-full space-y-5">
             @csrf
@@ -33,13 +35,9 @@
             </div>
 
             <button type="submit"
-                class="w-full tap-target rounded-2xl bg-oranye text-white text-xl font-bold shadow-md active:scale-95 transition">
+                class="w-full tap-target rounded-2xl bg-oranye text-white text-xl font-bold shadow-md hover:bg-oranye/90 transition">
                 Masuk &amp; Mulai Main
             </button>
         </form>
-
-        <a href="{{ route('login') }}" class="mt-8 text-biru font-semibold underline">
-            Saya anggota keluarga →
-        </a>
     </div>
 @endsection

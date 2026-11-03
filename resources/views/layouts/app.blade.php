@@ -26,6 +26,12 @@
 </head>
 <body class="bg-abu-50 text-slate-800">
     <div class="min-h-screen flex flex-col">
+        <div class="bg-abu-100 border-b border-abu-300 px-6 py-2 flex justify-end">
+            <a href="{{ route('pin-login.create') }}" class="text-sm font-semibold text-biru hover:underline">
+                🔄 Masuk sebagai Lansia
+            </a>
+        </div>
+
         @hasSection('nav')
             <header class="bg-white border-b border-abu-300 px-6 py-4 flex items-center justify-between">
                 @yield('nav')
