@@ -1,7 +1,7 @@
 @component('mail::message')
 # Laporan Mingguan — {{ $lansia->nama }}
 
-Berikut ringkasan aktivitas **{{ $lansia->nama }}** di Ceria Otak selama 7 hari terakhir:
+Berikut ringkasan aktivitas **{{ $lansia->nama }}** di Lentera selama 7 hari terakhir:
 
 - Total sesi bermain: **{{ $sesiMingguIni->count() }}**
 - Total waktu bermain: **{{ $totalMenitMain }} menit**
@@ -11,5 +11,5 @@ Berikut ringkasan aktivitas **{{ $lansia->nama }}** di Ceria Otak selama 7 hari 
 Terus dukung semangat {{ $lansia->nama }} untuk tetap aktif berlatih setiap hari.
 
 Terima kasih,<br>
-Ceria Otak
+Lentera
 @endcomponent

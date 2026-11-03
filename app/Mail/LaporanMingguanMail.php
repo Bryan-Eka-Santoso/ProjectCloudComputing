@@ -22,7 +22,7 @@ class LaporanMingguanMail extends Mailable
 
     public function build(): self
     {
-        return $this->subject("Laporan Mingguan Ceria Otak: {$this->lansia->nama}")
+        return $this->subject("Laporan Mingguan Lentera: {$this->lansia->nama}")
             ->markdown('mail.laporan-mingguan', [
                 'lansia' => $this->lansia,
                 'sesiMingguIni' => $this->sesiMingguIni,

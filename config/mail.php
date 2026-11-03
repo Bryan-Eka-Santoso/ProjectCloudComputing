@@ -30,8 +30,8 @@ return [
     ],
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@ceriaotak.test'),
-        'name' => env('MAIL_FROM_NAME', 'Ceria Otak'),
+        'address' => env('MAIL_FROM_ADDRESS', 'hello@lentera.test'),
+        'name' => env('MAIL_FROM_NAME', 'Lentera'),
     ],
 
 ];

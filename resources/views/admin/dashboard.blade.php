@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('nav')
-    <h1 class="font-extrabold text-biru text-xl">🧠 Ceria Otak <span class="text-slate-400 font-normal text-base">· Admin</span></h1>
+    <h1 class="font-extrabold text-biru text-xl">🧠 Lentera <span class="text-slate-400 font-normal text-base">· Admin</span></h1>
     <form method="POST" action="{{ route('logout') }}">
         @csrf
         <button class="text-sm font-semibold text-merah">Keluar</button>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('nav')
-    <h1 class="font-extrabold text-biru text-xl">🧠 Ceria Otak</h1>
+    <h1 class="font-extrabold text-biru text-xl">🧠 Lentera</h1>
     <a href="{{ route('keluarga.dashboard') }}" class="text-sm font-semibold text-biru">← Dashboard</a>
 @endsection
 

@@ -1,5 +1,5 @@
 {
-    "name": "ceria-otak/app",
+    "name": "lentera/app",
     "type": "project",
     "description": "Web app stimulasi kognitif untuk lansia, dengan keluarga sebagai pengawas.",
     "keywords": ["laravel", "elderly", "cognitive", "sdg"],

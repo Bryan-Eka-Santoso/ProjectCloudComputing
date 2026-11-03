@@ -18,8 +18,8 @@ class DatabaseSeeder extends Seeder
     {
         // Admin.
         $admin = User::create([
-            'name' => 'Admin Ceria Otak',
-            'email' => 'admin@ceriaotak.test',
+            'name' => 'Admin Lentera',
+            'email' => 'admin@lentera.test',
             'password' => Hash::make('password'),
             'role' => 'admin',
         ]);
@@ -27,14 +27,14 @@ class DatabaseSeeder extends Seeder
         // Keluarga (primary caregiver) + anggota keluarga tambahan.
         $keluargaUtama = User::create([
             'name' => 'Budi Santoso',
-            'email' => 'budi@ceriaotak.test',
+            'email' => 'budi@lentera.test',
             'password' => Hash::make('password'),
             'role' => 'keluarga',
         ]);
 
         $keluargaKedua = User::create([
             'name' => 'Sari Santoso',
-            'email' => 'sari@ceriaotak.test',
+            'email' => 'sari@lentera.test',
             'password' => Hash::make('password'),
             'role' => 'keluarga',
         ]);

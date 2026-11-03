@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $title ?? 'Ceria Otak' }}</title>
+    <title>{{ $title ?? 'Lentera' }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,7 +31,7 @@
     <div class="min-h-screen flex flex-col">
         <header class="bg-white border-b border-abu-300 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
             <a href="{{ route('lansia.dashboard') }}" class="flex items-center gap-2 font-extrabold text-biru text-xl">
-                🧠 Ceria Otak
+                🧠 Lentera
             </a>
 
             <nav class="flex items-center gap-3 text-base">

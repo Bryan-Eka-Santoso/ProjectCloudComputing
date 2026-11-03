@@ -6,7 +6,7 @@
             <div class="w-24 h-24 rounded-full bg-biru/10 flex items-center justify-center mb-4">
                 <span class="text-4xl">🧠</span>
             </div>
-            <h1 class="text-2xl font-extrabold text-biru mb-1">Ceria Otak</h1>
+            <h1 class="text-2xl font-extrabold text-biru mb-1">Lentera</h1>
             <p class="text-abu-400 mb-8 text-center">Pilih nama, lalu masukkan PIN untuk mulai bermain</p>
         </div>
 

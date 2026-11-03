@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('nav')
-    <h1 class="font-extrabold text-biru text-xl">🧠 Ceria Otak · Admin</h1>
+    <h1 class="font-extrabold text-biru text-xl">🧠 Lentera · Admin</h1>
     <a href="{{ route('admin.dashboard') }}" class="text-sm font-semibold text-biru">← Dashboard</a>
 @endsection
 

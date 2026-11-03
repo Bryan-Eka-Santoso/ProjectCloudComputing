@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Facade;
 
 return [
 
-    'name' => env('APP_NAME', 'Ceria Otak'),
+    'name' => env('APP_NAME', 'Lentera'),
 
     'env' => env('APP_ENV', 'production'),
 

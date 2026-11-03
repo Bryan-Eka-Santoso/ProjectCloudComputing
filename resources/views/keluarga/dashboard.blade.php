@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('nav')
-    <h1 class="font-extrabold text-biru text-xl">🧠 Ceria Otak <span class="text-slate-400 font-normal text-base">· Keluarga</span></h1>
+    <h1 class="font-extrabold text-biru text-xl">🧠 Lentera <span class="text-slate-400 font-normal text-base">· Keluarga</span></h1>
     <div class="flex items-center gap-4">
         <span class="text-sm text-abu-400">{{ $user->name }}</span>
         <form method="POST" action="{{ route('logout') }}">

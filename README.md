@@ -1,4 +1,4 @@
-# Ceria Otak 🧠
+# Lentera 🧠
 
 Aplikasi web stimulasi kognitif untuk lansia (40+), dibangun dengan Laravel 11,
 sebagai proyek kelas Cloud Computing. Berangkat dari isu SDG 3 (Kesehatan) dan
@@ -53,9 +53,9 @@ stimulasi kognitif rutin, yang berkontribusi pada risiko demensia/Alzheimer.
    php artisan migrate --seed
    ```
    Seeder membuat akun demo:
-   - Admin: `admin@ceriaotak.test` / `password`
-   - Keluarga (primary): `budi@ceriaotak.test` / `password`
-   - Keluarga (view-only): `sari@ceriaotak.test` / `password`
+   - Admin: `admin@lentera.test` / `password`
+   - Keluarga (primary): `budi@lentera.test` / `password`
+   - Keluarga (view-only): `sari@lentera.test` / `password`
    - Lansia: "Ibu Siti", PIN `1234`
 
 4. **Jalankan server**

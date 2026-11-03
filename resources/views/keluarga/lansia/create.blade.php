@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('nav')
-    <h1 class="font-extrabold text-biru text-xl">🧠 Ceria Otak</h1>
+    <h1 class="font-extrabold text-biru text-xl">🧠 Lentera</h1>
 @endsection
 
 @section('content')
