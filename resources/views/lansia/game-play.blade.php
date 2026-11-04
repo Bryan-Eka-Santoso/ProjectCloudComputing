@@ -12,11 +12,14 @@
             <p class="text-abu-400">{{ $game->deskripsi }}</p>
         </div>
 
-        <div id="area-permainan" class="bg-abu-50 border border-abu-200 rounded-2xl min-h-[360px] flex items-center justify-center mb-6">
-            <p class="text-abu-400 text-center px-6">
-                (Area permainan interaktif "{{ $game->nama }}" render di sini — logika game spesifik
-                dapat dikembangkan lebih lanjut di JavaScript halaman ini.)
-            </p>
+        <div id="area-permainan" class="bg-abu-50 border border-abu-200 rounded-2xl min-h-[360px] flex items-center justify-center p-6 mb-6">
+            @if (view()->exists("lansia.games.{$game->slug}"))
+                @include("lansia.games.{$game->slug}")
+            @else
+                <p class="text-abu-400 text-center px-6">
+                    Permainan "{{ $game->nama }}" belum punya logika khusus. Klik "Selesai Main" untuk tetap mencatat sesi ini.
+                </p>
+            @endif
         </div>
 
         <form method="POST" action="{{ route('lansia.game.store', $game) }}" id="form-selesai">
@@ -36,7 +39,6 @@
         document.getElementById('form-selesai').addEventListener('submit', function () {
             const detik = Math.round((Date.now() - waktuMulai) / 1000);
             document.getElementById('input-durasi').value = detik;
-            document.getElementById('input-skor').value = Math.floor(Math.random() * 100);
         });
     </script>
 @endsection
